@@ -36,7 +36,7 @@ jobs:
           echo "hello world ya!" > out.txt
           echo Add other actions to build
 
-      - name: save file
+      - uses: actions/checkout@v3
         with:
           name: Build File
           path: ${{ github.workspace }}/out.txt
